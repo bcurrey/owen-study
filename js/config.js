@@ -1,5 +1,4 @@
 // ── CONFIG ──
-// Store/retrieve credentials from localStorage
 const CONFIG_KEY = 'owenStudyConfig';
 
 function getConfig() {
@@ -10,12 +9,17 @@ function saveConfig() {
   const url = document.getElementById('cfgUrl').value.trim();
   const key = document.getElementById('cfgKey').value.trim();
   const anthro = document.getElementById('cfgAnthro').value.trim();
-  if (!url || !key || !anthro) { alert('Please fill in all fields.'); return; }
-  localStorage.setItem(CONFIG_KEY, JSON.stringify({ supabaseUrl: url, supabaseKey: key, anthropicKey: anthro }));
+  const googleId = document.getElementById('cfgGoogleId').value.trim();
+  if (!url || !key || !anthro || !googleId) { alert('Please fill in all fields.'); return; }
+  localStorage.setItem(CONFIG_KEY, JSON.stringify({ 
+    supabaseUrl: url, 
+    supabaseKey: key, 
+    anthropicKey: anthro,
+    googleClientId: googleId
+  }));
   window.location.reload();
 }
 
-// Owen's profile — baked in, used by all AI calls
 const OWEN_PROFILE = `Student profile: Owen Currey, Junior doing virtual high school.
 Classes:
 - Algebra 2: live instruction 1hr/day, tests + assignments, confidence 3/5 (weakest — needs most attention)
@@ -26,7 +30,6 @@ Outside commitments: sports, recovery from injury, work, gym.
 Falls behind when: sick or forgets.
 Math test: end of every month (predictable, recurring).`;
 
-// Call Anthropic API
 async function callClaude(messages, systemPrompt, onChunk) {
   const cfg = getConfig();
   if (!cfg) throw new Error('No config');
@@ -40,7 +43,7 @@ async function callClaude(messages, systemPrompt, onChunk) {
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
-      max_tokens: 1500,
+      max_tokens: 2000,
       system: systemPrompt,
       messages,
       stream: onChunk ? true : false,
