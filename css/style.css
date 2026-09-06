@@ -20,9 +20,9 @@
   --sidebar-width: 220px;
   --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
 }
-
+ 
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-
+ 
 body {
   font-family: var(--font);
   background: var(--bg);
@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
+ 
 /* ── CONFIG SCREEN ── */
 .config-screen {
   min-height: 100vh;
@@ -54,13 +54,13 @@ body {
 .config-box input { width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; color: var(--text); font-size: 14px; }
 .config-box button { width: 100%; background: var(--accent); color: white; border: none; border-radius: 10px; padding: 14px; font-size: 15px; font-weight: 600; cursor: pointer; margin-top: 24px; }
 .config-hint { font-size: 12px; color: var(--muted); margin-top: 16px; margin-bottom: 0; }
-
+ 
 /* ── LAYOUT ── */
 #mainApp {
   display: flex;
   min-height: 100vh;
 }
-
+ 
 /* ── SIDEBAR (desktop) ── */
 .sidebar {
   width: var(--sidebar-width);
@@ -102,7 +102,7 @@ body {
 .nav-icon { font-size: 16px; }
 .sidebar-footer { padding: 16px; border-top: 1px solid var(--border); }
 .streak-display { font-size: 13px; color: var(--amber); font-weight: 500; }
-
+ 
 /* ── MAIN CONTENT ── */
 .main-content {
   flex: 1;
@@ -111,7 +111,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+ 
 /* ── TOPBAR (mobile) ── */
 .topbar {
   display: none;
@@ -128,11 +128,11 @@ body {
 }
 .topbar-title { font-size: 17px; font-weight: 600; }
 .streak-pill { background: var(--amber-dim); color: var(--amber); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
-
+ 
 /* ── VIEWS ── */
 .view { display: none; padding: 28px 32px; max-width: 800px; }
 .view.active { display: block; }
-
+ 
 .view-header {
   display: flex;
   justify-content: space-between;
@@ -141,7 +141,7 @@ body {
 }
 .view-title { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
 .view-sub { font-size: 14px; color: var(--muted); margin-top: 4px; }
-
+ 
 /* ── DATE CONTROLS ── */
 .date-picker {
   background: var(--surface);
@@ -171,7 +171,7 @@ body {
   cursor: pointer;
 }
 .mobile-date-label { font-size: 15px; font-weight: 500; }
-
+ 
 /* ── TEST ALERT ── */
 .test-alert {
   background: var(--red-dim);
@@ -188,7 +188,7 @@ body {
 .test-alert-name { font-size: 17px; font-weight: 600; }
 .test-alert-days { font-size: 13px; color: var(--muted); margin-top: 2px; }
 .test-alert-btn { flex-shrink: 0; background: var(--red); color: white; border: none; border-radius: 10px; padding: 9px 16px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap; }
-
+ 
 /* ── SECTION TITLE ── */
 .section-title {
   font-size: 11px;
@@ -213,7 +213,7 @@ body {
   text-transform: none;
   letter-spacing: 0;
 }
-
+ 
 /* ── TODOS ── */
 .todo-list { display: flex; flex-direction: column; gap: 8px; }
 .todo {
@@ -257,7 +257,7 @@ body {
 .tag-English, .tag-eng { background: var(--purple-dim); color: var(--purple); }
 .tag-Econ, .tag-econ { background: var(--green-dim); color: var(--green); }
 .tag-General, .tag-habit { background: var(--amber-dim); color: var(--amber); }
-
+ 
 /* ── PROGRESS ── */
 .progress-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
 .progress-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
@@ -265,10 +265,10 @@ body {
 .progress-pct { font-size: 14px; font-weight: 600; color: var(--accent); }
 .progress-bar-bg { height: 6px; background: rgba(255,255,255,0.07); border-radius: 3px; overflow: hidden; }
 .progress-bar-fill { height: 100%; border-radius: 3px; background: var(--green); transition: width 0.4s ease; }
-
+ 
 /* ── CARD ── */
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 16px; }
-
+ 
 /* ── FORMS ── */
 .form-group { margin-bottom: 14px; }
 .form-group label { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 6px; }
@@ -284,7 +284,7 @@ body {
 }
 .form-group textarea { resize: vertical; min-height: 80px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-
+ 
 /* ── BUTTONS ── */
 .primary-btn {
   background: var(--accent);
@@ -312,7 +312,7 @@ body {
   width: 100%;
 }
 .close-btn { background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; padding: 4px; }
-
+ 
 /* ── PLANNER ── */
 .planner-form { }
 .study-plan-output { }
@@ -344,7 +344,7 @@ body {
   margin-top: 10px;
 }
 .add-to-today-btn:hover { color: var(--accent); border-color: var(--accent); }
-
+ 
 /* ── QUIZ ── */
 .quiz-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
 .quiz-progress-text { font-size: 13px; color: var(--muted); }
@@ -377,7 +377,7 @@ body {
 }
 .quiz-feedback.correct-fb { background: var(--green-dim); border: 1px solid rgba(52,201,138,0.25); }
 .quiz-feedback.wrong-fb { background: var(--red-dim); border: 1px solid rgba(255,95,95,0.25); }
-
+ 
 /* ── RESULTS ── */
 .quiz-results-card { text-align: center; }
 .results-score { font-size: 64px; font-weight: 700; letter-spacing: -2px; margin-bottom: 4px; }
@@ -387,7 +387,7 @@ body {
 .breakdown-correct { color: var(--green); font-weight: 600; }
 .breakdown-wrong { color: var(--red); font-weight: 600; }
 #resultsActions { display: flex; flex-direction: column; gap: 8px; }
-
+ 
 /* ── REMEDIATION ── */
 .remediation-card {
   background: var(--surface);
@@ -406,7 +406,7 @@ body {
 }
 .ai-response strong { color: var(--amber); }
 .typing-indicator { color: var(--muted); font-style: italic; }
-
+ 
 /* ── TOOLS ── */
 .tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
 .tool-card {
@@ -431,7 +431,7 @@ body {
 .tool-input-row { display: flex; gap: 8px; margin-bottom: 12px; }
 .tool-input-row input { flex: 1; }
 .tool-input-row button { flex-shrink: 0; padding: 10px 16px; background: var(--accent); color: white; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; }
-
+ 
 /* ── HISTORY ── */
 .history-tabs { display: flex; gap: 6px; margin-bottom: 20px; }
 .htab {
@@ -447,7 +447,7 @@ body {
 .htab.active { background: var(--accent-dim); color: var(--accent); border-color: transparent; }
 .history-panel { display: none; }
 .history-panel.active { display: block; }
-
+ 
 .quiz-history-item {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -464,7 +464,7 @@ body {
 .qhi-detail { font-size: 12px; color: var(--muted); }
 .strong-tag { background: var(--green-dim); color: var(--green); font-size: 11px; padding: 2px 8px; border-radius: 20px; margin-right: 4px; margin-bottom: 4px; display: inline-block; }
 .weak-tag { background: var(--red-dim); color: var(--red); font-size: 11px; padding: 2px 8px; border-radius: 20px; margin-right: 4px; margin-bottom: 4px; display: inline-block; }
-
+ 
 /* ── CLASS CARDS ── */
 .class-cards { display: flex; flex-direction: column; gap: 12px; }
 .class-card {
@@ -487,7 +487,7 @@ body {
 .green-fill { background: var(--green); }
 .class-meta { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
 .class-action { font-size: 13px; color: var(--accent); font-weight: 500; }
-
+ 
 /* ── MODAL ── */
 .modal-overlay {
   position: fixed; inset: 0;
@@ -507,16 +507,16 @@ body {
 }
 .modal-title { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
 .modal-actions { display: flex; gap: 10px; margin-top: 16px; }
-
+ 
 /* ── UTILS ── */
 .hidden { display: none !important; }
 .desktop-only { display: flex; }
-
+ 
 /* ── LOADING ── */
 .loading { text-align: center; padding: 40px; color: var(--muted); font-size: 14px; }
 .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
 @keyframes spin { to { transform: rotate(360deg); } }
-
+ 
 /* ── RESPONSIVE: MOBILE ── */
 @media (max-width: 768px) {
   .sidebar { display: none; }
@@ -531,7 +531,7 @@ body {
   .form-row { grid-template-columns: 1fr; }
   .bottom-nav { display: flex; }
 }
-
+ 
 /* ── BOTTOM NAV (mobile only) ── */
 .bottom-nav {
   display: none;
@@ -556,3 +556,80 @@ body {
 }
 .bnav-btn span:first-child { font-size: 20px; }
 .bnav-btn.active { color: var(--accent); }
+ 
+/* ── GOOGLE DRIVE ── */
+.drive-banner {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+.drive-banner-left { display: flex; align-items: center; gap: 12px; }
+.drive-banner-icon { font-size: 24px; }
+.drive-banner-title { font-size: 14px; font-weight: 600; }
+.drive-banner-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.drive-connect-btn {
+  flex-shrink: 0;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.drive-connect-btn.connected { background: var(--green); }
+.drive-load-section {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+.drive-load-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.drive-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.drive-badge.loaded { background: var(--green-dim); color: var(--green); }
+.drive-badge.loading { background: var(--amber-dim); color: var(--amber); }
+.drive-files-list {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.drive-load-btn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 100%;
+}
+.drive-load-btn:hover { border-color: var(--accent); color: var(--accent); }
+.drive-status-sidebar {
+  font-size: 12px;
+  margin-top: 8px;
+  color: var(--muted);
+}
+ 
